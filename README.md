@@ -40,7 +40,7 @@ Execute na raiz do projeto para subir a infra (irá rodar a aplicação também)
 
 As variáveis de ambiente necessárias estão configuradas no arquivo `docker-compose.yml` e também podem ser definidas via arquivo `.env.example`.
 
-# Banco de Dados
+## Banco de Dados
 
 No PostgreSQL temos duas tabelas:
 - **users**: Guarda os usuários
@@ -58,7 +58,7 @@ Rode as migrations antes de rodar a aplicação a primeira vez, para que vc tenh
 
 ```bash
 npm run migration:run
-
+```
 
 As migrations disponíveis são:
 - **CreateUsersTable**: Cria as tabelas `users` e `access_logs`
@@ -73,6 +73,7 @@ A aplicação possui um usuário admin padrão criado automaticamente via migrat
 - **Role**: `admin`
 
 Este usuário pode ser usado para fazer login e acessar os recursos da aplicação.
+
 ## Autenticação
 
 ### Redis
